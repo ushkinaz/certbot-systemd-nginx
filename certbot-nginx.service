@@ -4,6 +4,5 @@ After=network-online.target
 
 [Service]
 Type=oneshot
-ExecStartPre=/bin/systemctl stop nginx
-ExecStart=/usr/bin/certbot renew --standalone
-ExecStartPost=/bin/systemctl --no-block start nginx
+ExecStart=/usr/local/bin/certbot renew --agree-tos --nginx
+

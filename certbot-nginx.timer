@@ -2,7 +2,7 @@
 Description=Renew Certbot certificate (nginx)
 
 [Timer]
-OnCalendar=monthly
+OnCalendar=daily
 Persistent=true
 
 [Install]
